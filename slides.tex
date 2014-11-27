@@ -1,0 +1,72 @@
+\documentclass[ngerman,compress,aspectratio=169]{beamer}
+
+\mode<presentation>
+{
+  \useoutertheme[footline=titleinstituteauthor]{c4}
+  \useinnertheme{circles}
+  \usecolortheme{c4}
+  %\setbeamercovered{transparent}
+  \setbeamercovered{highly dynamic}
+}
+
+\usepackage{babel}
+\usepackage[utf8]{luainputenc}
+\usepackage{fontspec}
+\setsansfont{DejaVu Sans}
+
+\usepackage{bytefield}
+
+\usepackage[binary-units]{siunitx}
+\DeclareSIUnit \Byte {Byte}
+
+\usepackage{hyperref}
+
+\title[kurz Thema - u23 2014]
+{\textbf{Thema}\\u23 2014}
+
+\author[Jemand <jemand@example.com>]
+{Jemand}
+
+\institute[Chaos Computer Club Cologne]
+{
+Chaos Computer Club Cologne e.V.\\
+\url{https://koeln.ccc.de}
+}
+
+\date{Cologne\\2014-10-13}
+
+\pgfdeclareimage[height=1cm]{barcode}{./c4-logo}
+\logo{\pgfuseimage{barcode}}
+
+\AtBeginSection[]
+{
+\begin{frame}<beamer>
+	\tableofcontents[currentsection,currentsubsection]
+\end{frame}
+}
+
+\newcommand{\code}[1]{\texttt{#1}}
+
+
+\begin{document}
+
+\begin{frame}
+	\titlepage
+\end{frame}
+
+\begin{frame}
+	\tableofcontents
+\end{frame}
+
+\section{Abschnitts Titel}
+
+\begin{frame}{Slide Titel}
+	\begin{itemize}
+		\item Punkt 1
+		\item Punkt 2
+		\item Punkt 3
+	\end{itemize}
+\end{frame}
+
+\end{document}
+
