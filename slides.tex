@@ -54,7 +54,6 @@ Chaos Computer Club Cologne e.V.\\
 
 \newcommand{\code}[1]{\texttt{#1}}
 
-
 \begin{document}
 
 \begin{frame}
@@ -65,7 +64,62 @@ Chaos Computer Club Cologne e.V.\\
 	\tableofcontents
 \end{frame}
 
-\section{collectd}
+\section{Mesh-Netzwerke und BATMAN} 
+
+\begin{frame}{Was ist ein Mesh-Netzwerk im Freifunk-Sinn?}
+	\begin{center}
+		\includegraphics[scale=1]{mesh-network-1}
+	\end{center}
+\end{frame}
+
+\begin{frame}{Was ist ein Mesh-Netzwerk im Freifunk-Sinn?}
+	Begriffe:
+	\begin{itemize}
+		\pause
+		\item Nodes
+		\pause
+		\item Clients
+		\pause
+		\item Point-to-Point
+		\pause
+		\item Uplink
+		\pause
+		\item Neighbour
+	\end{itemize}
+\end{frame}
+
+\begin{frame}{Was ist ein Mesh-Netzwerk im Freifunk-Sinn?}
+	\begin{center}
+		\includegraphics[scale=0.6]{mesh-network-2}
+	\end{center}
+\end{frame}
+
+\begin{frame}{Was ist BATMAN?}
+	\begin{itemize}
+	    \pause
+		\item Layer 2
+	    \pause
+		\item dynamisch
+	    \pause
+		\item keine Graphen
+	    \pause
+		\item Begriffe: OGM (originator message)
+	\end{itemize}
+\end{frame}
+
+\begin{frame}
+	\begin{center}
+		\large{Wie funktioniert das dynamische Routing?}
+	\end{center}
+\end{frame}
+
+\begin{frame}{Was ist ein Mesh-Netzwerk im Freifunk-Sinn? - Beispiel}
+	\begin{center}
+		\includegraphics[scale=0.25]{batman-example}
+	\end{center}
+\end{frame}
+
+\section{collectd und das BATMAN-Plugin}
 
 \begin{frame}{Was ist collectd?}
 	\begin{itemize}
@@ -110,8 +164,6 @@ Chaos Computer Club Cologne e.V.\\
 	\end{itemize}
 \end{frame}
 
-\section{RRD}
-
 \begin{frame}{round-robin database}
 	\begin{itemize}
 		\pause
@@ -124,20 +176,20 @@ Chaos Computer Club Cologne e.V.\\
 	\end{itemize}
 \end{frame}
 
-\begin{frame}{rrdtool}
-	\begin{itemize}
-		\pause
-		\item neue RRD-Dateien erzeugen
-		\pause
-		\item vorhandene RRD-Dateien mit neuen Werten aktualisieren
-		\pause
-		\item die Daten aus einer Datei dumpen
-		\pause
-		\item $\ldots$
-		\pause
-		\item \textbf{Graphen plotten}
-	\end{itemize}
-\end{frame}
+%\begin{frame}{rrdtool}
+%	\begin{itemize}
+%		\pause
+%		\item neue RRD-Dateien erzeugen
+%		\pause
+%		\item vorhandene RRD-Dateien mit neuen Werten aktualisieren
+%		\pause
+%		\item die Daten aus einer Datei dumpen
+%		\pause
+%		\item $\ldots$
+%		\pause
+%		\item \textbf{Graphen plotten}
+%	\end{itemize}
+%\end{frame}
 
 \begin{frame}{Verwendung in FF-KBU / cserv}
 	\begin{center}
@@ -148,7 +200,11 @@ Chaos Computer Club Cologne e.V.\\
 	%\end{center}
 \end{frame}
 
-\section{das Plugin}
+\begin{frame}
+	\begin{center}
+		\large{das Plugin}
+	\end{center}
+\end{frame}
 
 \end{document}
 
